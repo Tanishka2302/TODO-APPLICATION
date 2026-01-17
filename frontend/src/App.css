@@ -251,3 +251,97 @@ body {
     height: auto;
   }
 }
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+@media (max-width: 768px) {
+  /* Whole app padding */
+  .app-wrapper {
+    padding: 16px;
+  }
+
+  /* Grid → single column */
+  .app-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Sidebar becomes top section */
+  .sidebar {
+    position: relative;
+    height: auto;
+    padding: 18px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav button {
+    font-size: 14px;
+    padding: 10px 12px;
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Main content */
+  .main {
+    padding: 20px;
+  }
+
+  .view-title {
+    font-size: 20px;
+  }
+
+  /* Input */
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+    height: 46px;
+  }
+
+  /* Todo cards */
+  .todo-item {
+    padding: 14px 16px;
+  }
+
+  .todo-left {
+    font-size: 15px;
+  }
+
+  /* Progress panel moves below */
+  .progress-panel {
+    position: relative;
+    height: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .landing-left h1 {
+    font-size: 36px;
+  }
+
+  .landing-left p {
+    font-size: 15px;
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .todo-left span {
+    font-size: 14px;
+  }
+}

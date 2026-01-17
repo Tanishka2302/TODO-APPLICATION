@@ -108,3 +108,22 @@
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .landing {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+    text-align: center;
+  }
+
+  .landing-left h1 {
+    font-size: 38px;
+  }
+
+  .landing-left p {
+    margin: 0 auto 32px;
+  }
+
+  .landing-right {
+    display: none; /* hide preview on mobile */
+  }
+}
