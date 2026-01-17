@@ -345,3 +345,43 @@ body {
     font-size: 14px;
   }
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  /* Sidebar becomes top nav */
+  .sidebar {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .nav button {
+    flex: 1;
+    padding: 10px 8px;
+    font-size: 13px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+}
