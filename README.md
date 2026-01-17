@@ -31,6 +31,6 @@ upcoming, and scheduled tasks with a clean dashboard UI.
 npm install
 npm start
 
-frontend
+### Frontend
 npm install
 npm run dev
